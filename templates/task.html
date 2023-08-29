@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="table">Name</div>
+        <div class="table">Date</div>
+        <div class="table">Assigned</div>
+        <div class="border"></div>
+    </div>
+    {% for task in tasks %}
+    <div class="container">
+        <div class="row">
+            <div class="table">{{task.name}}</div>
+            <div class="table">{{task.date}}</div>
+            <div class="table">{{task.assigned}}</div>
+
+        </div>
+
+    </div>
+    {% endfor %}
+
+</body>
+
+</html>
